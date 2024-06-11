@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--ユーザー管理-->
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー管理</title>
+    <link href="Management.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+    <h1 class="site_logo">ユーザー管理</h1>
+    <hr>
+    <p>○○に成功</p>
+    <form method="get" action="#" class="search-form">
+        <div class="search-container">
+          <input type="text" name="keyword" size="25" placeholder="キーワード検索">
+          <input type="submit" value="&#xf002">
+        </div>
+      </form>
+    <table>
+        <div class="caption"><p>検索結果</p></div>
+        <thead>
+            <tr><th>ユーザーID</th><th>ユーザー名</th><th>パスワード</th><th>詳細</th>
+        </thead>
+        </tr>
+            <tr>
+                <td>10001</td>
+                <td>ピー子</td>
+                <td>aaa</td>
+                <td><a class="detail_btn" href="./UserDetail.html">詳細</a></td>
+            </tr>
+            <tr>
+                <td>10002</td>
+                <td>パー子</td>
+                <td>bbb</td>
+                <td><a class="detail_btn" href="./UserDetail.html">詳細</a></td>
+            </tr>
+    </table>
+ </div>
+</body>
+</html>

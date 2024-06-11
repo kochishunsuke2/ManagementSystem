@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>更新</title>
+<link href="Management.css" rel="stylesheet">
+</head>
+<body>
+<div class="insert">
+    <h1>問題追加</h1>
+    <div class="discription">
+        <p>
+            （<span class="required"></span>は必須です）
+        </p>
+    </div>
+    <div class="form-body">
+        <form>
+            <fieldset class="label-130">
+                <div>
+                    <label class="required">問題名:</label>
+                    <input type="text" name="yougoname" class="base-text">
+                </div>
+                <div>
+                    <label class="required">解答:</label>
+                    <select name="anser">
+                        <option value="anser1">〇</option>
+                        <option value="anser2">×</option>
+                        </select>
+                </div>
+                <div>
+                    <label class="required">解説:</label>
+                    <textarea name="explain" class="base-text"></textarea>
+                </div>
+                <div>
+                    <label  class="required">単元:</label>
+                <select name="subject">
+                    <option value="サンプル1">サンプル1</option>
+                    <option value="サンプル2">サンプル2</option>
+                    <option value="サンプル3">サンプル3</option>
+                    </select>
+                </div>
+                <div>
+                    <label>画像:</label>
+                    <input type="file" name="file">
+                </div>
+                <div>
+                <label class="required">点数:</label>
+                <select name="points">
+                    <option value="points1">1点</option>
+                    <option value="points2">2点</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="btns">
+                <button type="button" onclick="location.href='./ProblemManagement.html'" class="basic-btn">追加</button>
+                <input type="button" onclick="location.href='./ProblemManagement.html'" value="戻る" class="cancel-btn">
+            </div>
+           <!-- <div id="modal">
+                <p class="modal-message">登録しますか？</p>
+                <div class="btns">
+                    <button type="submit" id="register-btn" class="basic-btn">登録</button>
+                    <button type="button" onclick="closeModal()" class="cancel-btn">キャンセル</button>
+                </div>
+            </div>-->
+        </form>
+    </div>
+</div>
+</body>
+</html>

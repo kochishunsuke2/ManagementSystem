@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>問題管理</title>
+<link href="Management.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <h1 class="site_logo">問題管理</h1>
+      <div class="user">
+        <p class="user_name">ヘッダー</p>
+        <!-- <form class="logout_form" action="logout.html" method="get"> -->
+          <!-- <button class="custom-btn" type="submit">
+            ログアウト</button> -->
+        </form>
+      </div>
+    </div>
+
+    <hr>
+    <div class="btn-area">
+      <!-- <div class="btn"><a class="basic-btn regist" href="insert.html">新規登録</a></div> -->
+      <div class="btn"><a class="basic-btn regist" href="ProblemAddition.html">問題の追加</a></div>
+    </div>
+    <!-- <div class="btn-area">
+      <div class="btn"><a class="basic-btn regist" href="insert.html">新規登録</a></div>
+      <div class="btn"><a class="basic-btn regist" href="category.html">用語の追加</a></div>
+    </div> -->
+    <p>○○に成功</p>
+    <form method="get" action="#" class="search-form">
+      <!-- <div class="order">
+        <select name="order" class="base-text">
+          <option>並び替え</option>
+          <option>商品ID：昇順</option>
+          <option>商品ID：降順</option>
+          <option>カテゴリ：昇順</option>
+          <option>カテゴリ：降順</option>
+          <option>単価：安い順</option>
+          <option>単価：高い順</option>
+        </select>
+      </div> -->
+      <div class="search-container">
+        <input type="text" name="keyword" size="25" placeholder="キーワード検索">
+        <input type="submit" value="&#xf002">
+      </div>
+    </form>
+
+    <table>
+        <!-- <div class="caption"><p>検索結果：10件</p></div> -->
+        
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>問題</th>
+          <th>解答</th>
+          <th>解説</th>
+          <th>単元</th>
+          <th>詳細</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>一般道路で追い越しをする時、一時的であれば、法定速度を超えても良い</td>
+          <td>×</td>
+          <td>追い越しをするときも、法定速度を超えてはいけません。</td>
+          <td>危険予測</td>
+          <td><a class="detail_btn" href="./ProblemDetail.html">詳細</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>一般道路で追い越しをする時、一時的であれば、法定速度を超えても良い</td>
+            <td>×</td>
+            <td>追い越しをするときも、法定速度を超えてはいけません。</td>
+            <td>危険予測</td>
+            <td><a class="detail_btn" href="./ProblemDetail.html">詳細</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>一般道路で追い越しをする時、一時的であれば、法定速度を超えても良い</td>
+            <td>×</td>
+            <td>追い越しをするときも、法定速度を超えてはいけません。</td>
+            <td>危険予測</td>
+            <td><a class="detail_btn" href="./ProblemDetail.html">詳細</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>一般道路で追い越しをする時、一時的であれば、法定速度を超えても良い</td>
+            <td>×</td>
+            <td>追い越しをするときも、法定速度を超えてはいけません。</td>
+            <td>危険予測</td>
+            <td><a class="detail_btn" href="./ProblemDetail.html">詳細</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>一般道路で追い越しをする時、一時的であれば、法定速度を超えても良い</td>
+            <td>×</td>
+            <td>追い越しをするときも、法定速度を超えてはいけません。</td>
+            <td>危険予測</td>
+            <td><a class="detail_btn" href="./ProblemDetail.html">詳細</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer></footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用語集追加</title>
+<link href="Management.css" rel="stylesheet">
+</head>
+<body>
+<div class="insert">
+    <h1>用語集管理</h1>
+    <div class="discription">
+        <p>
+            （<span class="required"></span>は必須です）
+        </p>
+    </div>
+    <div class="form-body">
+        <form>
+            <fieldset class="label-130">
+                <div>
+                    <label class="required">用語名:</label>
+                    <input type="text" name="yougoname" class="base-text">
+                </div>
+                <div>
+                    <label>画像:</label>
+                    <input type="file" name="file">
+                </div>
+                <div>
+                    <label class="required">説明:</label>
+                    <textarea name="description" class="base-text"></textarea>
+                </div>
+            </fieldset>
+            <div class="btns">
+                <button type="button" onclick="location.href='./TermManagement.html'" class="basic-btn">追加</button>
+                                                             <!-- "openModal()" -->
+             <input type="button" onclick="location.href='./TermManagement.html'" value="戻る" class="cancel-btn">
+            </div>
+           <!-- <div id="modal">
+                <p class="modal-message">登録しますか？</p>
+                <div class="btns">
+                    <button type="submit" id="register-btn" class="basic-btn">登録</button>
+                    <button type="button" onclick="closeModal()" class="cancel-btn">キャンセル</button>
+                </div>
+            </div>-->
+        </form>
+    </div>
+</div>
+</body>
+</html>
