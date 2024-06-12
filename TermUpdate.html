@@ -2,80 +2,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>更新</title>
+<title>用語集管理更新</title>
 <link href="Management.css" rel="stylesheet">
 </head>
 <body>
-
-  <div class="header">
-    <h1 class="site_logo">用語管理更新</h1>
-    <div class="user">
-      <p class="user_name">ヘッダー</p>
-      <!-- <form class="logout_form" action="logout.html" method="get"> -->
-        <!-- <button class="custom-btn" type="submit">
-      ログアウト</button> -->
-      </form>
+<div class="insert">
+    <h1>用語集管理更新</h1>
+    <div class="discription">
+        <p>
+            （<span class="required"></span>は必須です）
+        </p>
     </div>
-  </div>
-
-  <hr>
-
-  <div class="update">
     <div class="form-body">
-      <div class="img_block">
-        <img src="images/マッキー.png" class="product-img">画像<br>
-      </div>
-      <form action="delete" method="post">
-        <fieldset class="label-130 product_block">
-          <p class="error">エラーメッセージ</p>
-          <div>
-            <label>ID</label>
-            <input type="text" name="productId" value="1"  class="base-text">
-          </div>
-          <div>
-            <label>用語</label>
-            <input type="text" name="name" value="追い越し"  class="base-text">
-          </div>
-          <div>
-            <label>解説</label>
-            <textarea name="description"  class="base-text">
+        <form>
+            <fieldset class="label-130">
+                <div>
+                    <label class="required">用語名:</label>
+                    <input type="text" name="name" value="追い越し"  class="base-text">
+                </div>
+                <div>
+                    <label>画像:</label>
+                    <input type="file" name="file">
+                </div>
+                <div>
+                    <label class="required">解説:</label>
+                    <textarea name="description"  class="base-text">
 車が進路を変えて、進行中の前の車の前方に出ることをいいます。
-            </textarea>
-          </div>
-          <div>
-            <label  class="required">単元:</label>
-        <select name="subject">
-            <option value="サンプル1">サンプル1</option>
-            <option value="サンプル2">サンプル2</option>
-            <option value="サンプル3">サンプル3</option>
-            </select>
-        </div>
-        
-        </fieldset>
-        <div>
-          <div class="btns">
-            <!-- <input type="button" onclick="openModal()" value="削除" class="sakujo-btn"> -->
-            <input type="button" onclick="location.href='./TermManagement.html'" value="更新" class="kousin-btn">
-            <input type="button" onclick="location.href='./TermDetail.html'" value="戻る" class="cancel-btn">
-          </div>
-          <!-- <div id="modal">
-            <p class="modal-message">更新しますか？</p>
+                    </textarea>
+                </div>
+                <div>
+                  <label  class="required">単元:</label>
+              <select name="subject">
+                  <option value="サンプル1">サンプル1</option>
+                  <option value="サンプル2">サンプル2</option>
+                  <option value="サンプル3">サンプル3</option>
+                  </select>
+              </div>
+            </fieldset>
             <div class="btns">
-              <button type="button" id="delete-btn" class="basic-btn">更新</button>
-              <button type="button" onclick="closeModal()" class="cancel-btn">キャンセル</button>
-            </div> -->
-          </div>
-        </div>
-      </form>
+              <input type="button" onclick="location.href='./TermManagement.html'" value="更新" class="kousin-btn">
+              <input type="button" onclick="location.href='./TermDetail.html'" value="戻る" class="cancel-btn">
+            </div>
+           <!-- <div id="modal">
+                <p class="modal-message">登録しますか？</p>
+                <div class="btns">
+                    <button type="submit" id="register-btn" class="basic-btn">登録</button>
+                    <button type="button" onclick="closeModal()" class="cancel-btn">キャンセル</button>
+                </div>
+            </div>-->
+        </form>
     </div>
-  </div>
-  <div id="fadeLayer"></div>
-  <!-- <script src="./js/commons.js"></script>
-  <script>
-    'use strict'
-    document.getElementById('delete-btn').addEventListener('click', () => {
-      location.href = './menu.html'
-    })
-  </script> -->
+</div>
 </body>
 </html>
